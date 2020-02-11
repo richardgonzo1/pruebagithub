@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="dropzone.css">
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>imagen principal compu</h1>
+                <img id="imgc" src="../images/back7.jpg" width="200px" height="200px" alt="" srcset="">
+                <button class="btn btn-primary" onclick="nom('c')" data-target="#modalCambiar" data-toggle="modal">Cambiar</button>
+            </div>
+            <div class="col-sm-6">
+                <h1>imagen principal movil</h1>
+                <img id="imgm" src="../images/backmovil.jpg" width="200px" height="200px" alt="" srcset="">
+                <button class="btn btn-primary" onclick="nom('m')" data-target="#modalCambiar" data-toggle="modal">Cambiar</button>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="modalCambiar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Cambiar Imagen</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="dropzone dropzoneContenido" id="imagen"></div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="dropzone.js">
+</script>
+<script src="f.js">
+</script>
+<script>
+    Dropzone.autoDiscover = false;
+</script>
+</html
